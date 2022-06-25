@@ -40,15 +40,15 @@ jobs:
       #- name: Seting up IMAGE_TAG variable
       #  id: version
       #  run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)
-      - uses: actions/checkout@v2
-      - name: Create tag artifact
-        run: echo "GIT_TAG=`echo $(git describe --tags --abbrev=0)`" >> $GITHUB_ENV
+      #- uses: actions/checkout@v2
+      #- name: Create tag artifact
+      #  run: echo "GIT_TAG=`echo $(git describe --tags --abbrev=0)`" >> $GITHUB_ENV
 
       - name: Build, Test, Tag and push cats image to Amazon ECR
         env: 
           ECR_REGISTRY: ${{steps.login-ecr.outputs.registry}}
           ECR_REPOSITORY: cats
-          IMAGE_TAG: v${{ GIT_TAG }}
+        #  IMAGE_TAG: v${{ GIT_TAG }}
           
       # Runs a set of commands
         run: |
