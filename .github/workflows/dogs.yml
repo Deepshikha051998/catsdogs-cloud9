@@ -45,7 +45,7 @@ jobs:
         env: 
           ECR_REGISTRY: ${{steps.login-ecr.outputs.registry}}
           ECR_REPOSITORY: dogs
-          IMAGE_TAG: v-${{ steps.version.outputs.VERSION }}
+          IMAGE_TAG: v1-${{ steps.version.outputs.VERSION }}
         #  IMAGE_TAG: v${{ GIT_TAG }}
           
       # Runs a set of commands
