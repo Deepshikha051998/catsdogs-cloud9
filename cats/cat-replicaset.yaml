@@ -15,7 +15,7 @@ spec:
         app: cats
     spec:
       containers:
-      - image: 961974299592.dkr.ecr.us-east-1.amazonaws.com/cats_repo:cats-v11
+      - image: 685327363182.dkr.ecr.us-east-1.amazonaws.com/cats:v-master
         name: cats-container
         ports:
         - containerPort: 80
