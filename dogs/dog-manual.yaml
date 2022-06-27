@@ -3,11 +3,11 @@ kind: Pod
 metadata:
   labels:
     app: dogs
-  name: dogs-pod
+  name: dogs
 spec:
   containers:
   - image: 685327363182.dkr.ecr.us-east-1.amazonaws.com/dogs:v1-master
-    name: dogs-container
+    name: dogs
     ports:
     - containerPort: 80
       hostPort: 8081
