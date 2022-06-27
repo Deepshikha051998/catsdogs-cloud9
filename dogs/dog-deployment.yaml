@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: dogs-container
-        image: 961974299592.dkr.ecr.us-east-1.amazonaws.com/dogs_repo:dogs-v11
+        image: 685327363182.dkr.ecr.us-east-1.amazonaws.com/dogs:v1-master
         ports:
         - containerPort: 80
