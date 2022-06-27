@@ -3,7 +3,7 @@ kind: ReplicaSet
 metadata:
   labels:
     app: cats
-  name: cats-replicaset
+  name: cats
 spec:
   replicas: 3
   selector:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - image: 685327363182.dkr.ecr.us-east-1.amazonaws.com/cats:v-master
-        name: cats-container
+        name: cats
         ports:
         - containerPort: 80
