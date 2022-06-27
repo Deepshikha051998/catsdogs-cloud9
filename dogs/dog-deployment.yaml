@@ -1,7 +1,7 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: Deploy
 metadata:
-  name: dogs-deployment
+  name: dogs-deploy
   labels:
     app: dogs
 spec:
@@ -15,7 +15,7 @@ spec:
         app: dogs
     spec:
       containers:
-      - name: dogs-container
+      - name: dogs
         image: 685327363182.dkr.ecr.us-east-1.amazonaws.com/dogs:v1-master
         ports:
         - containerPort: 80
